@@ -6,7 +6,7 @@
     {{ partial "header" . }}
     <main class="main">
       <section class="articles">
-        <h2>Recent Post</h2>
+        <h2>Recent Posts</h2>
         <div class="pure-g">
           {{ range (.Paginator 12).Pages }}
             {{ .Render "li" }}
